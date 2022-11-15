@@ -67,3 +67,5 @@ void loginp::on_pushButton_clicked()
     signup->show();
 }
 
+//fdghjjuytyu
+

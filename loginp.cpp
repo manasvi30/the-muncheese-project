@@ -1,0 +1,69 @@
+#include "loginp.h"
+#include "ui_loginp.h"
+#include<QMessageBox>
+
+loginp::loginp(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::loginp)
+{
+    ui->setupUi(this);
+    QSqlDatabase mydb=QSqlDatabase::addDatabase("QSQLITE");
+    mydb.setDatabaseName("C:/Users/HP/sqlite3/login.db");
+
+//    QString username = ui-> lineEdit_username->text();
+//    QString password = ui-> lineEdit_password->text();
+
+
+    if(!mydb.open())
+         ui->label_7->setText("Failed to open the database");
+    else
+         ui->label_7->setText("Connected....");
+
+
+
+
+}
+
+loginp::~loginp()
+{
+    delete ui;
+}
+
+void loginp::on_pushButton_log_clicked()
+{
+    QString username = ui->lineEdit_username->text();
+    QString password = ui->lineEdit_password->text();
+
+    QSqlQuery query(QSqlDatabase::database("MyConnect"));
+
+    query.prepare(QString("SELECT * FROM signup WHERE username = :username AND password = :password"));
+
+    query.bindValue(":username", username);
+    query.bindValue(":password", password);
+
+    if(!query.exec()){
+        QMessageBox::information(this,"Failed", "Query Failed to execute");
+    }else{
+        while(query.next()){
+            QString usernameFromDB = query.value(3).toString();
+            QString passwordFromDB = query.value(4).toString();
+
+            if(usernameFromDB == username && passwordFromDB == password){
+                QMessageBox::information(this,"Success","Login Success");
+
+            }else {
+               QMessageBox::information(this,"Failed","Incorrect password or username");
+            }
+        }
+    }
+
+}
+
+
+void loginp::on_pushButton_clicked()
+{
+    hide();
+    signup = new signupp(this);
+    signup->show();
+}
+

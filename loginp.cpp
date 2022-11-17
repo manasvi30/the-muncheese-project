@@ -8,7 +8,7 @@ loginp::loginp(QWidget *parent) :
 {
     ui->setupUi(this);
     QSqlDatabase mydb=QSqlDatabase::addDatabase("QSQLITE");
-    mydb.setDatabaseName("C:/Users/HP/sqlite3/login.db");
+    mydb.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/login.db");
 
 //    QString username = ui-> lineEdit_username->text();
 //    QString password = ui-> lineEdit_password->text();

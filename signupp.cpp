@@ -9,8 +9,13 @@ signupp::signupp(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
+    QPixmap pix(":/image/Images/Muncheese (2)-ImResizer.jpg");
+    ui->label_pic3->setPixmap(pix);
+
+
     QSqlDatabase my=QSqlDatabase::addDatabase("QSQLITE");
-    my.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/login.db");
+    my.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/Db/login.db");
 
     if(!my.open())
          ui->label_7->setText("Failed to open the database");

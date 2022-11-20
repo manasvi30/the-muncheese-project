@@ -7,8 +7,13 @@ loginp::loginp(QWidget *parent) :
     ui(new Ui::loginp)
 {
     ui->setupUi(this);
+    QPixmap pix(":/image/Images/The-ImResizer (1).jpg");
+    ui->label_pic1->setPixmap(pix);
+    QPixmap pic(":/image/Images/Untitled design-ImResizer (2).jpg");
+    ui->label_pic2->setPixmap(pic);
+
     QSqlDatabase mydb=QSqlDatabase::addDatabase("QSQLITE");
-    mydb.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/login.db");
+    mydb.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/Db/login.db");
 
 //    QString username = ui-> lineEdit_username->text();
 //    QString password = ui-> lineEdit_password->text();
@@ -67,5 +72,4 @@ void loginp::on_pushButton_clicked()
     signup->show();
 }
 
-//fdghjjuytyu
 

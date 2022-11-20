@@ -5,4 +5,17 @@
         <file>Images/Untitled design-ImResizer (2).jpg</file>
         <file>Images/Muncheese (2)-ImResizer.jpg</file>
     </qresource>
+    <qresource prefix="/">
+        <file>Images/1st page.jpg</file>
+        <file>Images/2nd page.jpg</file>
+        <file>Images/3rd page.jpg</file>
+        <file>Images/4th page.jpg</file>
+        <file>Images/best sellers wings.jpg</file>
+        <file>Images/cake.jpg</file>
+        <file>Images/drinks.jpg</file>
+        <file>Images/dumplingspecial.jpg</file>
+        <file>Images/location haru.jpg</file>
+        <file>Images/online wala.jpg</file>
+        <file>Images/view cart wala.jpg</file>
+    </qresource>
 </RCC>

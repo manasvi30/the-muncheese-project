@@ -13,6 +13,10 @@ mainwindow::mainwindow(QWidget *parent)
     , ui(new Ui::mainwindow)
 {
     ui->setupUi(this);
+
+
+
+
     //database stuffs
     QSqlDatabase db= QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/Acer/Downloads/menu (1).db");

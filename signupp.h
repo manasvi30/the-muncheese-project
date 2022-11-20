@@ -1,5 +1,6 @@
 #ifndef SIGNUPP_H
 #define SIGNUPP_H
+#include "mainwindow.h"
 
 #include <QDialog>
 
@@ -28,6 +29,7 @@ private slots:
 
 private:
     Ui::signupp *ui;
+    mainwindow *mainwindow;
 };
 
 #endif // SIGNUPP_H

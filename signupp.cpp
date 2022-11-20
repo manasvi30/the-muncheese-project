@@ -83,6 +83,8 @@ void signupp::on_pushButton_signup_clicked()
     if(ui->checkBox->isChecked()){
         QMessageBox::information(this, "Sign up","You are signed up. You can use this login for future use. For now we will login for you.");
         hide();
+                mainwindow = new class mainwindow(this);
+                mainwindow->show();
     }
     else{
        QMessageBox::information(this,"Sign up","You must agree the policy to continue.");}

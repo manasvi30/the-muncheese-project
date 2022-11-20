@@ -12,16 +12,19 @@ SOURCES += \
     loginp.cpp \
     main.cpp \
     first.cpp \
+    mainwindow.cpp \
     signupp.cpp
 
 HEADERS += \
     first.h \
     loginp.h \
+    mainwindow.h \
     signupp.h
 
 FORMS += \
     first.ui \
     loginp.ui \
+    mainwindow.ui \
     signupp.ui
 
 # Default rules for deployment.

@@ -15,7 +15,7 @@ signupp::signupp(QWidget *parent) :
 
 
     QSqlDatabase my=QSqlDatabase::addDatabase("QSQLITE");
-    my.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/Db/login.db");
+    my.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/login.db");
 
     if(!my.open())
          ui->label_7->setText("Failed to open the database");

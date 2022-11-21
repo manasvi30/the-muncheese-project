@@ -13,7 +13,7 @@ loginp::loginp(QWidget *parent) :
     ui->label_pic2->setPixmap(pic);
 
     QSqlDatabase mydb=QSqlDatabase::addDatabase("QSQLITE");
-    mydb.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/Db/login.db");
+    mydb.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/login.db");
 
 //    QString username = ui-> lineEdit_username->text();
 //    QString password = ui-> lineEdit_password->text();

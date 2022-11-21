@@ -39,7 +39,7 @@
     <string>[+]Status</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="label_pic1">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -50,9 +50,6 @@
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../../../Downloads/The-ImResizer (1).jpg</pixmap>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
@@ -102,7 +99,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="label_pic2">
    <property name="geometry">
     <rect>
      <x>-50</x>
@@ -113,9 +110,6 @@
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../../../Downloads/Untitled design-ImResizer (2).jpg</pixmap>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">

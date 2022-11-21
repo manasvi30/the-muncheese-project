@@ -1,11 +1,15 @@
 #include "first.h"
 #include "ui_first.h"
+#include <QPixmap>
 
 first::first(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::first)
 {
     ui->setupUi(this);
+    QPixmap pix(":/image/Images/Muncheese (1).png");
+    ui->label_pic->setPixmap(pix);
+
 
     QSqlDatabase my=QSqlDatabase::addDatabase("QSQLITE");
     my.setDatabaseName("C:/Users/HP/sqlite3/login.db");

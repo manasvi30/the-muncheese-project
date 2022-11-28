@@ -10,7 +10,7 @@ signupp::signupp(QWidget *parent) :
     ui->setupUi(this);
 
 
-    QPixmap pix(":/image/Images/Muncheese (2)-ImResizer.jpg");
+    QPixmap pix(":/image/Images/sign.jpg");
     ui->label_pic3->setPixmap(pix);
 
 
@@ -32,11 +32,11 @@ signupp::~signupp()
 void signupp::on_pushButton_signup_clicked()
 {
 
-    QString fullname = ui ->txt_name->text();
-    QString email = ui ->txt_email->text();
-    QString username = ui ->txt_user->text();
-    QString password = ui ->txt_password->text();
-    QString confirm  = ui ->txt_confirm->text();
+    QString fullname = ui ->txt_name_6->text();
+    QString email = ui ->txt_email_6->text();
+    QString username = ui ->txt_user_6->text();
+    QString password = ui ->txt_password_6->text();
+    QString confirm  = ui ->txt_confirm_6->text();
     QString pattern="(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+";
     QRegularExpression re("(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+");
     QRegularExpressionMatch match = re.match(email);

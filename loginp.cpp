@@ -7,10 +7,8 @@ loginp::loginp(QWidget *parent) :
     ui(new Ui::loginp)
 {
     ui->setupUi(this);
-    QPixmap pix(":/image/Images/The-ImResizer (1).jpg");
+    QPixmap pix(":/image/Images/Brown Gold Beige Simple Scribbles Food and Drink Zoom Events Hub Page Cover.png");
     ui->label_pic1->setPixmap(pix);
-    QPixmap pic(":/image/Images/Untitled design-ImResizer (2).jpg");
-    ui->label_pic2->setPixmap(pic);
 
     QSqlDatabase mydb=QSqlDatabase::addDatabase("QSQLITE");
     mydb.setDatabaseName("C:/Users/HP/OneDrive/Documents/Project/the-muncheese-project/the-muncheese-project/login.db");

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>732</width>
-    <height>438</height>
+    <width>985</width>
+    <height>860</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,82 +16,108 @@
   <widget class="QLabel" name="label_pic3">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>381</width>
-     <height>361</height>
+     <x>-10</x>
+     <y>-30</y>
+     <width>1081</width>
+     <height>911</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>700</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>[+]status</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_signup">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>480</y>
+     <width>291</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sign up</string>
+   </property>
+  </widget>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>25</y>
-     <width>311</width>
-     <height>281</height>
+     <x>660</x>
+     <y>80</y>
+     <width>321</width>
+     <height>321</height>
     </rect>
    </property>
    <property name="title">
     <string>Sign Up</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_6">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout_26">
       <item>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="label_28">
         <property name="text">
          <string>Full Name</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_name"/>
+       <widget class="QLineEdit" name="txt_name_6"/>
       </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayout_27">
       <item>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="label_29">
         <property name="text">
          <string>Email </string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_email"/>
+       <widget class="QLineEdit" name="txt_email_6"/>
       </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <layout class="QHBoxLayout" name="horizontalLayout_28">
       <item>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="label_30">
         <property name="text">
          <string>Username</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_user"/>
+       <widget class="QLineEdit" name="txt_user_6"/>
       </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <layout class="QHBoxLayout" name="horizontalLayout_29">
       <item>
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="label_31">
         <property name="text">
          <string>Password</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_password">
+       <widget class="QLineEdit" name="txt_password_6">
         <property name="echoMode">
          <enum>QLineEdit::PasswordEchoOnEdit</enum>
         </property>
@@ -100,16 +126,16 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <layout class="QHBoxLayout" name="horizontalLayout_30">
       <item>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="label_32">
         <property name="text">
          <string>Confirm Password</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_confirm">
+       <widget class="QLineEdit" name="txt_confirm_6">
         <property name="echoMode">
          <enum>QLineEdit::PasswordEchoOnEdit</enum>
         </property>
@@ -119,43 +145,17 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton_signup">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>350</y>
-     <width>291</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Sign up</string>
-   </property>
-  </widget>
   <widget class="QCheckBox" name="checkBox">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>290</y>
+     <x>670</x>
+     <y>410</y>
      <width>321</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
     <string>By signing up, I agree your Terms and Privacy Policy.</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>620</x>
-     <y>400</y>
-     <width>91</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>[+]status</string>
    </property>
   </widget>
  </widget>

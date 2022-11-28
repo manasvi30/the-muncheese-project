@@ -1,70 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>first</class>
- <widget class="QMainWindow" name="first">
+ <widget class="QDialog" name="first">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>815</width>
-    <height>630</height>
+    <width>1368</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>first</string>
+   <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>550</y>
-      <width>71</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>[+]status</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_pic">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>751</width>
-      <height>571</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_new">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>390</y>
-      <width>181</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ORDER NOW</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>815</width>
-     <height>22</height>
+     <x>160</x>
+     <y>30</y>
+     <width>1211</width>
+     <height>651</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../../Desktop/www.themuncheese.png</pixmap>
+   </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>500</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Started</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

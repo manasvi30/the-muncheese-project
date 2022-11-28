@@ -19,6 +19,7 @@ public:
     ~mainwindow();
 
 
+
 private slots:
     void on_pushButton_menu1_clicked();
 

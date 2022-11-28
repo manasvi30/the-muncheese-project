@@ -1,30 +1,27 @@
 #ifndef FIRST_H
 #define FIRST_H
 
-#include <QMainWindow>
-#include <QtSql>
-#include <QtDebug>
-#include <QFileInfo>
-
+#include <QDialog>
 #include "loginp.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class first; }
-QT_END_NAMESPACE
+namespace Ui {
+class first;
+}
 
-class first : public QMainWindow
+class first : public QDialog
 {
     Q_OBJECT
 
 public:
-    first(QWidget *parent = nullptr);
+    explicit first(QWidget *parent = nullptr);
     ~first();
 
 private slots:
-    void on_pushButton_new_clicked();
+    void on_pushButton_clicked();
 
 private:
     Ui::first *ui;
-    loginp *Login;
+    loginp *loginp;
 };
+
 #endif // FIRST_H

@@ -8,22 +8,63 @@
 
 
 
+void addvalues(int Id,QString Category,QString Item,int Price);
 mainwindow::mainwindow(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::mainwindow)
 {
     ui->setupUi(this);
 
+    QPixmap pix(":/image/Images/1.png");
+    ui->label->setPixmap(pix);
+    QPixmap pia(":/image/Images/mainn.png");
+    ui->label_2->setPixmap(pia);
+    QPixmap pib(":/image/Images/3 (2).png");
+    ui->label_3->setPixmap(pib);
+    QPixmap pic(":/image/Images/3 (1).png");
+    ui->label_4->setPixmap(pic);
+    QPixmap pid(":/image/Images/dess.png");
+    ui->label_5->setPixmap(pid);
+    QPixmap pie(":/image/Images/drinky.png");
+    ui->label_6->setPixmap(pie);
+    QPixmap pig(":/image/Images/bestu.png");
+    ui->label_7->setPixmap(pig);
+    QPixmap pii(":/image/Images/yy.png");
+    ui->label_8->setPixmap(pii);
+    QPixmap pik(":/image/Images/CART.png");
+    ui->label_9->setPixmap(pik);
+    QPixmap pil(":/image/Images/PAY.png");
+    ui->label_10->setPixmap(pil);
+    QPixmap pim(":/image/Images/RR.png");
+    ui->label_11->setPixmap(pim);
 
 
 
-    //database stuffs
+
+
+
+    //connecting database stuffs
     QSqlDatabase db= QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/Acer/Downloads/menu (1).db");
+    db.setDatabaseName("C:/Users/Acer/Desktop/database/cart.db");
      if (!db.open())
          ui->label_database->setText("FAILED TO CONNECT");
      else
          ui->label_database->setText("connected");
+
+
+    QString query="CREATE TABLE menuu("
+            "Id integer,"
+            "Category VARCHAR(20),"
+            "Item VARCHAR(20),"
+            "Price integer;";
+     QSqlQuery qry;
+     if(!qry.exec(query))
+     {
+         qDebug()<<"error creating a table";
+
+}
+     addvalues(1,"main","dumplings",200);
+    db.close();
 
 
 
@@ -135,6 +176,8 @@ void mainwindow::on_pushButton_pay_clicked()
     totall= total + delivery;
     str3= std::to_string(totall);
     ui->label_totall->setText(str3.c_str());
+
+
 }
 
 
@@ -157,7 +200,7 @@ void mainwindow::on_pushButton_on_clicked()
 {
       itemprice ip;
 ip.itemame= "onion rings";
-ip.itemprice= 250;
+ip.itemprice= 200;
 v.push_back(ip);
 }
 
@@ -177,7 +220,7 @@ void mainwindow::on_pushButton_ff_clicked()
 {
     itemprice ip;
     ip.itemame= "french fries";
-    ip.itemprice= 250;
+    ip.itemprice= 300;
     v.push_back(ip);
 }
 
@@ -196,7 +239,7 @@ void mainwindow::on_pushButton_11_clicked()
 {
     itemprice ip;
     ip.itemame= "garlic bread";
-    ip.itemprice= 350;
+    ip.itemprice= 180;
     v.push_back(ip);
 }
 
@@ -207,7 +250,7 @@ void mainwindow::on_pushButton_car_clicked()
 
     itemprice ip;
 ip.itemame= "carbonara";
-ip.itemprice= 350;
+ip.itemprice= 360;
 v.push_back(ip);
 
 }
@@ -215,7 +258,7 @@ void mainwindow::on_pushButton_spagetti_clicked()
 {
     itemprice ip;
     ip.itemame= "spagetti";
-    ip.itemprice= 350;
+    ip.itemprice= 300;
     v.push_back(ip);
 }
 
@@ -224,7 +267,7 @@ void mainwindow::on_pushButton_steak_clicked()
 {
     itemprice ip;
     ip.itemame= "steak";
-    ip.itemprice= 550;
+    ip.itemprice= 600;
     v.push_back(ip);
 }
 
@@ -233,7 +276,7 @@ void mainwindow::on_pushButton_naan_clicked()
 {
     itemprice ip;
     ip.itemame= "naan";
-    ip.itemprice= 350;
+    ip.itemprice= 50;
     v.push_back(ip);
 }
 
@@ -252,7 +295,7 @@ void mainwindow::on_pushButton_cali_clicked()
 {
     itemprice ip;
     ip.itemame= "cali roll";
-    ip.itemprice= 550;
+    ip.itemprice= 4000;
     v.push_back(ip);
 }
 
@@ -261,7 +304,7 @@ void mainwindow::on_pushButton_wings_clicked()
 {
     itemprice ip;
     ip.itemame= "wings";
-    ip.itemprice= 450;
+    ip.itemprice= 350;
     v.push_back(ip);
 }
 
@@ -270,7 +313,7 @@ void mainwindow::on_pushButton_hot_clicked()
 {
     itemprice ip;
     ip.itemame= "hot dog";
-    ip.itemprice= 350;
+    ip.itemprice= 200;
     v.push_back(ip);
 }
 
@@ -279,7 +322,7 @@ void mainwindow::on_pushButton_salmon_clicked()
 {
     itemprice ip;
     ip.itemame= "salmon";
-    ip.itemprice= 850;
+    ip.itemprice= 500;
     v.push_back(ip);
 }
 
@@ -297,7 +340,7 @@ void mainwindow::on_pushButton_curry_clicked()
 {
     itemprice ip;
     ip.itemame= "curry";
-    ip.itemprice= 330;
+    ip.itemprice= 400;
     v.push_back(ip);
 }
 
@@ -306,14 +349,14 @@ void mainwindow::on_pushButton_taco_clicked()
 {
     itemprice ip;
     ip.itemame= "taco";
-    ip.itemprice= 350;
+    ip.itemprice= 200;
     v.push_back(ip);
 }
 void mainwindow::on_pushButton_red_clicked()
 {
     itemprice ip;
     ip.itemame= "red velvet";
-    ip.itemprice= 250;
+    ip.itemprice= 180;
     v.push_back(ip);
 }
 
@@ -322,7 +365,7 @@ void mainwindow::on_pushButton_cheese_clicked()
 {
     itemprice ip;
     ip.itemame= "cheese cake";
-    ip.itemprice= 300;
+    ip.itemprice= 150;
     v.push_back(ip);
 }
 void mainwindow::on_pushButton_chocolate_clicked()
@@ -330,7 +373,7 @@ void mainwindow::on_pushButton_chocolate_clicked()
 
     itemprice ip;
     ip.itemame= "chocolate cake";
-    ip.itemprice= 350;
+    ip.itemprice= 160;
     v.push_back(ip);
 }
 
@@ -340,7 +383,7 @@ void mainwindow::on_pushButton_black_clicked()
 
     itemprice ip;
     ip.itemame= "black forest";
-    ip.itemprice= 150;
+    ip.itemprice= 200;
     v.push_back(ip);
 }
 void mainwindow::on_pushButton_vanilla_clicked()
@@ -348,7 +391,7 @@ void mainwindow::on_pushButton_vanilla_clicked()
 
     itemprice ip;
     ip.itemame= "vanilla icecream";
-    ip.itemprice= 80;
+    ip.itemprice= 90;
     v.push_back(ip);
 }
 
@@ -358,7 +401,7 @@ void mainwindow::on_pushButton_strawberry_clicked()
 
     itemprice ip;
     ip.itemame= "strawberry icecream";
-    ip.itemprice= 80;
+    ip.itemprice= 90;
     v.push_back(ip);
 }
 
@@ -368,7 +411,7 @@ void mainwindow::on_pushButton_choc_clicked()
 
     itemprice ip;
     ip.itemame= "chocolate icecream";
-    ip.itemprice= 70;
+    ip.itemprice= 80;
     v.push_back(ip);
 }
 
@@ -377,7 +420,7 @@ void mainwindow::on_pushButton_butter_clicked()
 {
     itemprice ip;
     ip.itemame= "butterscotch";
-    ip.itemprice= 90;
+    ip.itemprice= 80;
     v.push_back(ip);
 }
 
@@ -387,7 +430,7 @@ void mainwindow::on_pushButton_cookies_clicked()
 {
     itemprice ip;
     ip.itemame= "chocolate chip cookies";
-    ip.itemprice= 40;
+    ip.itemprice= 50;
     v.push_back(ip);
 }
 
@@ -396,22 +439,22 @@ void mainwindow::on_pushButton_brownie_clicked()
 {
     itemprice ip;
     ip.itemame= "brownie";
-    ip.itemprice= 100;
+    ip.itemprice= 145;
     v.push_back(ip);
 }
 
 void mainwindow::on_pushButton_cup_clicked()
 {
     itemprice ip;
-    ip.itemame= "brownie";
-    ip.itemprice= 100;
+    ip.itemame= "cupcake";
+    ip.itemprice= 50;
     v.push_back(ip);
 }
 void mainwindow::on_pushButton_chocoo_clicked()
 {
     itemprice ip;
     ip.itemame= "chocolate milkshake";
-    ip.itemprice= 180;
+    ip.itemprice= 300;
     v.push_back(ip);
 }
 
@@ -419,8 +462,8 @@ void mainwindow::on_pushButton_chocoo_clicked()
 void mainwindow::on_pushButton_stra_clicked()
 {
     itemprice ip;
-    ip.itemame= "strawberry milk";
-    ip.itemprice= 150;
+    ip.itemame= "strawberry milkshake";
+    ip.itemprice= 280;
     v.push_back(ip);
 }
 
@@ -429,7 +472,7 @@ void mainwindow::on_pushButton_van_clicked()
 {
     itemprice ip;
     ip.itemame= "vanila milshake";
-    ip.itemprice= 200;
+    ip.itemprice= 300;
     v.push_back(ip);
 }
 
@@ -438,7 +481,7 @@ void mainwindow::on_pushButton_oreo_clicked()
 {
     itemprice ip;
     ip.itemame= "oreo shake";
-    ip.itemprice= 150;
+    ip.itemprice= 290;
     v.push_back(ip);
 }
 
@@ -457,7 +500,7 @@ void mainwindow ::on_pushButton_lemon_clicked()
 {
     itemprice ip;
     ip.itemame= "lemonade";
-    ip.itemprice= 140;
+    ip.itemprice= 200;
     v.push_back(ip);
 }
 
@@ -467,7 +510,7 @@ void mainwindow::on_pushButton_blood_clicked()
 {
     itemprice ip;
     ip.itemame= "bloody marry";
-    ip.itemprice= 200;
+    ip.itemprice= 175;
     v.push_back(ip);
 }
 
@@ -476,7 +519,7 @@ void mainwindow::on_pushButton_pina_clicked()
 {
     itemprice ip;
     ip.itemame= "pina colada";
-    ip.itemprice= 300;
+    ip.itemprice= 200;
     v.push_back(ip);
 }
 
@@ -531,7 +574,7 @@ void mainwindow::on_pushButton_fish_clicked()
 {
     itemprice ip;
     ip.itemame= "fish and chips";
-    ip.itemprice= 50;
+    ip.itemprice= 600;
     v.push_back(ip);
 }
 
@@ -540,7 +583,7 @@ void mainwindow::on_pushButton_hot_2_clicked()
 {
     itemprice ip;
     ip.itemame= "hot wings";
-    ip.itemprice= 500;
+    ip.itemprice= 400;
     v.push_back(ip);
 }
 
@@ -550,7 +593,7 @@ void mainwindow::on_pushButton_dough_clicked()
 {
     itemprice ip;
     ip.itemame= "doughnut";
-    ip.itemprice= 50;
+    ip.itemprice= 80;
     v.push_back(ip);
 }
 
@@ -560,7 +603,7 @@ void mainwindow::on_pushButton_tart_clicked()
 {
     itemprice ip;
     ip.itemame= "chocolate tart";
-    ip.itemprice= 350;
+    ip.itemprice= 300;
     v.push_back(ip);
 }
 
@@ -569,7 +612,7 @@ void mainwindow::on_pushButton_salad_clicked()
 {
     itemprice ip;
     ip.itemame= "salad";
-    ip.itemprice= 160;
+    ip.itemprice= 180;
     v.push_back(ip);
 }
 
@@ -578,7 +621,7 @@ void mainwindow::on_pushButton_pho_clicked()
 {
     itemprice ip;
     ip.itemame= "pho";
-    ip.itemprice= 160;
+    ip.itemprice= 400;
     v.push_back(ip);
 }
 
@@ -589,7 +632,7 @@ void mainwindow::on_pushButton_dump_clicked()
 {
     itemprice ip;
     ip.itemame= "dumplings";
-    ip.itemprice= 160;
+    ip.itemprice= 200;
     v.push_back(ip);
 }
 
@@ -599,7 +642,7 @@ void mainwindow::on_pushButton_egg_clicked()
 {
     itemprice ip;
     ip.itemame= "egg roll";
-    ip.itemprice= 160;
+    ip.itemprice= 200;
     v.push_back(ip);
 }
 
@@ -609,11 +652,11 @@ void mainwindow::on_pushButton_wrap_clicked()
 {
     itemprice ip;
     ip.itemame= "wrap";
-    ip.itemprice= 160;
+    ip.itemprice= 190;
     v.push_back(ip);
 }
 
-
+//deleting of items in cart
 void mainwindow::on_pushButton_del_clicked()
 {
    QListWidgetItem *it = ui->listWidget_cart->takeItem(nSelected);
@@ -627,7 +670,9 @@ void mainwindow::on_pushButton_del_clicked()
 
    str1 = std::to_string(total);
    ui->total->setText(str1.c_str());
+
 }
+
 
 void mainwindow::on_listWidget_cart_currentRowChanged(int currentRow)
 {
@@ -670,19 +715,25 @@ void mainwindow::on_pushButton_6_clicked()
 
 
 
-
+//exit of the program
 void mainwindow::on_pushButton_ok_clicked()
 {
+
     QString location = ui->lineEdit_street->text();
     QString street = ui->lineEdit_phone->text();
-     if (location =="test" && street =="20" )
+     if (location =="  " && street =="  " )
      {
-        QMessageBox::information(this,"locationn","location is entered");
-         ui->textEdit_1->insertPlainText("your order will be delivered within 30 mins");
+          QMessageBox::warning(this,"locationn","you have not enterd your data");
 
      }
      else{
-         QMessageBox::warning(this,"locationn","you have not enterd your data");
+
+         QMessageBox::information(this,"locationn","location is entered");
+          ui->textEdit_1->insertPlainText("your order will be delivered within 30 mins..........");
+
+
+
+
      }
 
 }
@@ -695,4 +746,25 @@ void mainwindow::on_pushButton_EXIT_clicked()
 }
 
 
+void addvalues(int Id,QString Category,QString Item,int Price)
+{
+    QSqlQuery qry;
+   qry.prepare("INSERT INTO mennu("
 
+                            "Id ,"
+                           "Category,"
+                           "Item ,"
+                           "Price)"
+               "VALUES(?,?,?,?);");
+              qry.addBindValue(Id);
+   qry.addBindValue(Category);
+   qry.addBindValue(Item);
+   qry.addBindValue(Price);
+    if (!qry.exec())
+    {
+        qDebug()<<"error adding the value";
+    }
+
+
+
+}

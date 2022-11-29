@@ -1,9 +1,5 @@
 <RCC>
     <qresource prefix="/image">
-        <file>Images/Muncheese (1).png</file>
-        <file>Images/The-ImResizer (1).jpg</file>
-        <file>Images/Untitled design-ImResizer (2).jpg</file>
-        <file>Images/Muncheese (2)-ImResizer.jpg</file>
         <file>Images/1.png</file>
         <file>Images/3 (1).png</file>
         <file>Images/3 (2).png</file>
@@ -17,8 +13,7 @@
         <file>Images/RR.png</file>
         <file>Images/spee.png</file>
         <file>Images/yy.png</file>
-        <file>Images/viber_image_2022-11-28_15-29-30-883 (1).jpg</file>
-        <file>Images/sign.jpg</file>
-        <file>Images/Brown Gold Beige Simple Scribbles Food and Drink Zoom Events Hub Page Cover.png</file>
+        <file>Images/login.jpg</file>
+        <file>Images/White Brown Minimalist Healthy Diet Guide Presentation.jpg</file>
     </qresource>
 </RCC>

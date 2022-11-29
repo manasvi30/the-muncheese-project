@@ -7,7 +7,7 @@ loginp::loginp(QWidget *parent) :
     ui(new Ui::loginp)
 {
     ui->setupUi(this);
-    QPixmap pix(":/image/Images/Brown Gold Beige Simple Scribbles Food and Drink Zoom Events Hub Page Cover.png");
+    QPixmap pix(":/image/Images/login.jpg");
     ui->label_pic1->setPixmap(pix);
 
     QSqlDatabase mydb=QSqlDatabase::addDatabase("QSQLITE");
@@ -34,31 +34,7 @@ loginp::~loginp()
 
 void loginp::on_pushButton_log_clicked()
 {
-    QString username = ui->lineEdit_username->text();
-    QString password = ui->lineEdit_password->text();
 
-    QSqlQuery query(QSqlDatabase::database("MyConnect"));
-
-    query.prepare(QString("SELECT * FROM signup WHERE username = :username AND password = :password"));
-
-    query.bindValue(":username", username);
-    query.bindValue(":password", password);
-
-    if(!query.exec()){
-        QMessageBox::information(this,"Failed", "Query Failed to execute");
-    }else{
-        while(query.next()){
-            QString usernameFromDB = query.value(3).toString();
-            QString passwordFromDB = query.value(4).toString();
-
-            if(usernameFromDB == username && passwordFromDB == password){
-                QMessageBox::information(this,"Success","Login Success");
-
-            }else {
-               QMessageBox::information(this,"Failed","Incorrect password or username");
-            }
-        }
-    }
 
 }
 
@@ -68,6 +44,41 @@ void loginp::on_pushButton_clicked()
     hide();
     signup = new signupp(this);
     signup->show();
+
 }
 
+
+
+void loginp::on_pushButton_2_clicked()
+{
+    QString username = ui->lineEdit_username->text();
+    QString password = ui->lineEdit_password->text();
+
+    QSqlQuery query(QSqlDatabase::database("QSQLITE"));
+
+    query.prepare(QString("SELECT * FROM signup WHERE username = :username AND password = :password"));
+
+    query.bindValue(":username", username);
+    query.bindValue(":password", password);
+
+    if(!query.exec()){
+        QMessageBox::information(this,"Failed", "Query Failed to execute");
+    }
+    else{
+        while(query.next()){
+            QString usernameFromDB = query.value(3).toString();
+            QString passwordFromDB = query.value(4).toString();
+
+            if(usernameFromDB == username && passwordFromDB == password){
+               QMessageBox::information(this, "Success", "Login Success");
+               hide();
+                       mainwindow = new class mainwindow(this);
+                       mainwindow->show();
+            }else{
+                QMessageBox::information(this,"Failed","Login Failed");
+            }
+
+        }
+     }
+}
 

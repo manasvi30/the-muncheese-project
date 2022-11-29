@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton_log">
-   <property name="geometry">
-    <rect>
-     <x>510</x>
-     <y>230</y>
-     <width>75</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Login</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -36,16 +23,16 @@
     </rect>
    </property>
    <property name="text">
-    <string>[+]Status</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_pic1">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-30</x>
      <y>20</y>
      <width>841</width>
-     <height>601</height>
+     <height>701</height>
     </rect>
    </property>
    <property name="text">
@@ -55,8 +42,8 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>80</y>
+     <x>20</x>
+     <y>150</y>
      <width>371</width>
      <height>141</height>
     </rect>
@@ -99,25 +86,12 @@
     </item>
    </layout>
   </widget>
-  <widget class="QLabel" name="label_pic2">
-   <property name="geometry">
-    <rect>
-     <x>-40</x>
-     <y>400</y>
-     <width>841</width>
-     <height>261</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>270</y>
-     <width>201</width>
+     <x>80</x>
+     <y>320</y>
+     <width>294</width>
      <height>41</height>
     </rect>
    </property>
@@ -149,6 +123,19 @@
    </property>
    <property name="text">
     <string>[+]Status</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>290</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Login</string>
    </property>
   </widget>
  </widget>

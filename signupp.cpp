@@ -10,8 +10,8 @@ signupp::signupp(QWidget *parent) :
     ui->setupUi(this);
 
 
-    QPixmap pix(":/image/Images/sign.jpg");
-    ui->label_pic3->setPixmap(pix);
+    QPixmap pix(":/image/Images/White Brown Minimalist Healthy Diet Guide Presentation.jpg");
+    ui->label->setPixmap(pix);
 
 
     QSqlDatabase my=QSqlDatabase::addDatabase("QSQLITE");

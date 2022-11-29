@@ -65,11 +65,11 @@ void loginp::on_pushButton_2_clicked()
         QMessageBox::information(this,"Failed", "Query Failed to execute");
     }
     else{
-        while(query.next()){
+        if(query.next()){
             QString usernameFromDB = query.value(3).toString();
             QString passwordFromDB = query.value(4).toString();
 
-            if(usernameFromDB == username && passwordFromDB == password){
+            usernameFromDB == username && passwordFromDB == password;
                QMessageBox::information(this, "Success", "Login Success");
                hide();
                        mainwindow = new class mainwindow(this);
@@ -79,6 +79,6 @@ void loginp::on_pushButton_2_clicked()
             }
 
         }
-     }
+
 }
 

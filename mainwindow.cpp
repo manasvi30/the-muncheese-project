@@ -92,8 +92,10 @@ struct itemprice
     std::string itemame;
     int itemprice;
 };
-int total=0;
-int totall=0;
+int total;
+int deleted;
+int pay;
+
 
 std::vector<itemprice> v;
 mainwindow::~mainwindow()
@@ -147,6 +149,7 @@ void mainwindow::on_pushButton_menu7_clicked()
 //adding items and price
 void mainwindow::on_pushButton_view_clicked()
 {
+    total=0;
     ui->stackedWidget1->setCurrentIndex(8);
 
         ui->stackedWidget1->setCurrentIndex(8);
@@ -157,24 +160,34 @@ void mainwindow::on_pushButton_view_clicked()
         ui->listWidget_cart->addItem(str.c_str());
         total += v[i].itemprice;
     }
+
         str = std::to_string(total);
         ui->total->setText(str.c_str());
 
+};
 
 
-}
 
 //adding for delivery
 void mainwindow::on_pushButton_pay_clicked()
 {
+
     ui->stackedWidget1->setCurrentIndex(9);
     std::string str2;
     int delivery = 150;
     str2 = std::to_string(delivery);
     ui->label_delivery->setText(str2.c_str());
+    std::string str4;
+     float vat=(0.13)*float(total);
+    str4 = std::to_string(vat);
+     ui->vat->setText(str4.c_str());
+    std::string str5;
+     float service=(0.1)*float(total);
+    str5 = std::to_string(service);
+   ui->service->setText(str5.c_str());
     std::string str3;
-    totall= total + delivery;
-    str3= std::to_string(totall);
+    pay = total + delivery + vat + service;
+    str3= std::to_string(pay);
     ui->label_totall->setText(str3.c_str());
 
 
@@ -656,27 +669,25 @@ void mainwindow::on_pushButton_wrap_clicked()
     v.push_back(ip);
 }
 
-//deleting of items in cart
-void mainwindow::on_pushButton_del_clicked()
-{
-   QListWidgetItem *it = ui->listWidget_cart->takeItem(nSelected);
-   delete it;
-   std::string str1;
-   for(int i=0;i < int (v.size());i++)
-   {
-         ui->listWidget_cart->addItem(str1.c_str());
-        total =total-(v[nSelected].itemprice);
-   }
-
-   str1 = std::to_string(total);
-   ui->total->setText(str1.c_str());
-
-}
-
-
 void mainwindow::on_listWidget_cart_currentRowChanged(int currentRow)
 {
     nSelected = currentRow;
+}
+
+//deleting of items in cart
+void mainwindow::on_pushButton_del_clicked()
+{
+   std::string str1;
+
+
+        total =total-(v[nSelected].itemprice);
+
+   str1 = std::to_string(total);
+   ui->del->setText(str1.c_str());
+   QListWidgetItem *it = ui->listWidget_cart->takeItem(nSelected);
+   delete it;
+
+
 }
 
 
@@ -731,7 +742,7 @@ void mainwindow::on_pushButton_ok_clicked()
          QMessageBox::information(this,"locationn","location is entered");
           ui->textEdit_1->insertPlainText("your order will be delivered within 30 mins..........");
 
-
+         ui->del->setText(0);
 
 
      }
@@ -764,7 +775,15 @@ void addvalues(int Id,QString Category,QString Item,int Price)
     {
         qDebug()<<"error adding the value";
     }
+}
 
 
+
+void mainwindow::on_pushButton_review_clicked()
+{
+
+    rating = new class rating(this);
+    rating->show();
 
 }
+

@@ -5,6 +5,7 @@
 #include <QFileInfo>
 
 #include <QDialog>
+#include <rating.h>>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class mainwindow; }
@@ -35,7 +36,8 @@ private slots:
 
     void on_pushButton_menu7_clicked();
 
-    void on_pushButton_view_clicked();
+    void  on_pushButton_view_clicked();
+
 
     void on_pushButton_pay_clicked();
 
@@ -155,8 +157,11 @@ private slots:
 
     void on_listWidget_cart_currentRowChanged(int currentRow);
 
+    void on_pushButton_review_clicked();
+
 private:
     Ui::mainwindow *ui;
+    rating *rating;
     int nSelected ;
 };
 #endif // MAINWINDOW_H

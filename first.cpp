@@ -6,6 +6,8 @@ first::first(QWidget *parent) :
     ui(new Ui::first)
 {
     ui->setupUi(this);
+    QPixmap pix(":/image/Images/11.png");
+    ui->label->setPixmap(pix);
 }
 
 first::~first()

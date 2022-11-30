@@ -25,15 +25,12 @@
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>../../../../Desktop/www.themuncheese.png</pixmap>
-   </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>780</x>
-     <y>500</y>
+     <x>880</x>
+     <y>540</y>
      <width>221</width>
      <height>41</height>
     </rect>

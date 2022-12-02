@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1481</width>
-    <height>786</height>
+    <width>1362</width>
+    <height>856</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,21 +19,21 @@
   <widget class="QStackedWidget" name="stackedWidget1">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>20</y>
+     <x>140</x>
+     <y>0</y>
      <width>1151</width>
-     <height>841</height>
+     <height>831</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>8</number>
+    <number>10</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>10</y>
+       <x>30</x>
+       <y>0</y>
        <width>1021</width>
        <height>791</height>
       </rect>
@@ -45,45 +45,33 @@
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>309</y>
+       <x>260</x>
+       <y>290</y>
        <width>71</width>
        <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">BACKGROUND-COLOR:PINK;
-COLOR: WHITE;</string>
+COLOR: black;</string>
      </property>
      <property name="text">
       <string>main</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="geometry">
-      <rect>
-       <x>690</x>
-       <y>810</y>
-       <width>51</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>add</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>678</y>
+       <x>220</x>
+       <y>670</y>
        <width>81</width>
        <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">BACKGROUND-COLOR:PINK;
-COLOR: WHITE;</string>
+COLOR: black;
+</string>
      </property>
      <property name="text">
       <string>best</string>
@@ -100,7 +88,8 @@ COLOR: WHITE;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">BACKGROUND-COLOR:PINK;
-COLOR: WHITE;</string>
+COLOR: black;
+</string>
      </property>
      <property name="text">
       <string>drinks</string>
@@ -109,15 +98,15 @@ COLOR: WHITE;</string>
     <widget class="QPushButton" name="pushButton_5">
      <property name="geometry">
       <rect>
-       <x>760</x>
-       <y>310</y>
+       <x>750</x>
+       <y>290</y>
        <width>83</width>
        <height>29</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">BACKGROUND-COLOR:PINK;
-COLOR: WHITE;</string>
+COLOR: balck;</string>
      </property>
      <property name="text">
       <string>dessert</string>
@@ -127,14 +116,14 @@ COLOR: WHITE;</string>
      <property name="geometry">
       <rect>
        <x>780</x>
-       <y>680</y>
+       <y>660</y>
        <width>83</width>
        <height>29</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">BACKGROUND-COLOR:PINK;
-COLOR: WHITE;</string>
+COLOR: black;</string>
      </property>
      <property name="text">
       <string>special</string>
@@ -144,14 +133,14 @@ COLOR: WHITE;</string>
      <property name="geometry">
       <rect>
        <x>830</x>
-       <y>740</y>
+       <y>730</y>
        <width>83</width>
        <height>29</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">BACKGROUND-COLOR:PINK;
-COLOR: WHITE;</string>
+COLOR: black;;</string>
      </property>
      <property name="text">
       <string>menu1</string>
@@ -182,7 +171,8 @@ COLOR: WHITE;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:pink;\ncolor:white</string>
+      <string notr="true">background-color:pink;
+color:black;</string>
      </property>
      <property name="text">
       <string>next</string>
@@ -197,6 +187,10 @@ COLOR: WHITE;</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -209,6 +203,9 @@ COLOR: WHITE;</string>
        <width>51</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -223,6 +220,10 @@ COLOR: WHITE;</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -236,6 +237,9 @@ COLOR: WHITE;</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -248,6 +252,10 @@ COLOR: WHITE;</string>
        <width>41</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -360,7 +368,8 @@ COLOR: WHITE;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color:pink;
-color:white;
+color:black;
+
 </string>
      </property>
      <property name="text">
@@ -376,6 +385,9 @@ color:white;
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -388,6 +400,9 @@ color:white;
        <width>41</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -402,6 +417,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -414,6 +432,10 @@ color:white;
        <width>41</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -428,6 +450,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -440,6 +465,9 @@ color:white;
        <width>41</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -474,7 +502,7 @@ color:white;
     <widget class="QLabel" name="label_37">
      <property name="geometry">
       <rect>
-       <x>680</x>
+       <x>710</x>
        <y>340</y>
        <width>131</width>
        <height>20</height>
@@ -548,7 +576,8 @@ color:white;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:pink;\ncolor:white</string>
+      <string notr="true">background-color:pink;
+color:black;</string>
      </property>
      <property name="text">
       <string>next</string>
@@ -563,6 +592,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -575,6 +607,9 @@ color:white;
        <width>41</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -589,6 +624,9 @@ color:white;
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -601,6 +639,9 @@ color:white;
        <width>41</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -615,6 +656,9 @@ color:white;
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -627,6 +671,9 @@ color:white;
        <width>41</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -735,7 +782,8 @@ color:white;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:pink;\ncolor:white</string>
+      <string notr="true">background-color:pink;
+color:black;</string>
      </property>
      <property name="text">
       <string>next</string>
@@ -750,6 +798,10 @@ color:white;
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -762,6 +814,9 @@ color:white;
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -776,6 +831,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -788,6 +846,9 @@ color:white;
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -802,6 +863,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -815,6 +879,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -822,11 +889,14 @@ color:white;
     <widget class="QPushButton" name="pushButton_butter">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>510</y>
+       <x>610</x>
+       <y>520</y>
        <width>71</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -835,11 +905,14 @@ color:white;
     <widget class="QPushButton" name="pushButton_vanilla">
      <property name="geometry">
       <rect>
-       <x>620</x>
+       <x>610</x>
        <y>580</y>
        <width>71</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -848,11 +921,14 @@ color:white;
     <widget class="QPushButton" name="pushButton_strawberry">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>630</y>
+       <x>610</x>
+       <y>640</y>
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -867,6 +943,9 @@ color:white;
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -879,6 +958,9 @@ color:white;
        <width>71</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -965,8 +1047,8 @@ color:white;
     <widget class="QLabel" name="label_70">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>580</y>
+       <x>360</x>
+       <y>590</y>
        <width>181</width>
        <height>20</height>
       </rect>
@@ -978,8 +1060,8 @@ color:white;
     <widget class="QLabel" name="label_71">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>510</y>
+       <x>360</x>
+       <y>520</y>
        <width>211</width>
        <height>20</height>
       </rect>
@@ -992,7 +1074,7 @@ color:white;
      <property name="geometry">
       <rect>
        <x>360</x>
-       <y>630</y>
+       <y>640</y>
        <width>211</width>
        <height>20</height>
       </rect>
@@ -1006,7 +1088,7 @@ color:white;
       <rect>
        <x>720</x>
        <y>120</y>
-       <width>251</width>
+       <width>161</width>
        <height>20</height>
       </rect>
      </property>
@@ -1052,7 +1134,8 @@ color:white;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:pink;\ncolor:white</string>
+      <string notr="true">background-color:pink;
+color:black;</string>
      </property>
      <property name="text">
       <string>next</string>
@@ -1067,6 +1150,10 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1079,6 +1166,9 @@ color:white;
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1093,6 +1183,9 @@ color:white;
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1105,6 +1198,9 @@ color:white;
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1119,6 +1215,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1131,6 +1230,9 @@ color:white;
        <width>81</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1145,6 +1247,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1157,6 +1262,9 @@ color:white;
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1171,6 +1279,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1183,6 +1294,9 @@ color:white;
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1197,6 +1311,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1209,6 +1326,9 @@ color:white;
        <width>71</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1398,7 +1518,8 @@ color:white;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:pink;\ncolor:white</string>
+      <string notr="true">background-color:pink;
+color:black;</string>
      </property>
      <property name="text">
       <string>next</string>
@@ -1413,6 +1534,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1425,6 +1549,9 @@ color:white;
        <width>51</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1439,6 +1566,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1452,6 +1582,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1464,6 +1597,9 @@ color:white;
        <width>51</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1539,8 +1675,8 @@ color:white;
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>10</y>
+       <x>10</x>
+       <y>0</y>
        <width>1031</width>
        <height>791</height>
       </rect>
@@ -1560,7 +1696,7 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: pink;
-color: white;</string>
+color:black;</string>
      </property>
      <property name="text">
       <string>view</string>
@@ -1575,6 +1711,9 @@ color: white;</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1582,11 +1721,14 @@ color: white;</string>
     <widget class="QPushButton" name="pushButton_pho">
      <property name="geometry">
       <rect>
-       <x>570</x>
+       <x>540</x>
        <y>340</y>
        <width>51</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1595,7 +1737,7 @@ color: white;</string>
     <widget class="QPushButton" name="pushButton_dump">
      <property name="geometry">
       <rect>
-       <x>860</x>
+       <x>850</x>
        <y>340</y>
        <width>41</width>
        <height>20</height>
@@ -1614,6 +1756,9 @@ color: white;</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
      <property name="text">
       <string>add</string>
      </property>
@@ -1621,11 +1766,14 @@ color: white;</string>
     <widget class="QPushButton" name="pushButton_wrap">
      <property name="geometry">
       <rect>
-       <x>720</x>
+       <x>730</x>
        <y>620</y>
        <width>51</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
      </property>
      <property name="text">
       <string>add</string>
@@ -1634,66 +1782,66 @@ color: white;</string>
     <widget class="QLabel" name="label_91">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>180</x>
        <y>340</y>
        <width>111</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>1.Salad Rs 180</string>
+      <string>1.Salad   Rs180</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_92">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>440</x>
        <y>340</y>
        <width>131</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>2.Pho Rs 400</string>
+      <string>2.Pho  Rs400</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_93">
      <property name="geometry">
       <rect>
-       <x>700</x>
+       <x>710</x>
        <y>340</y>
        <width>141</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>3.Dumpling Rs 200</string>
+      <string>3.Dumpling  Rs200</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_94">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>290</x>
        <y>620</y>
        <width>141</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>4.Egg Roll Rs 200</string>
+      <string>4.Egg Roll    Rs 200</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_95">
      <property name="geometry">
       <rect>
-       <x>560</x>
+       <x>570</x>
        <y>620</y>
-       <width>151</width>
+       <width>161</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>5.Chicken Wrap Rs 190</string>
+      <string>5.Chicken Wrap    Rs 190</string>
      </property>
     </widget>
     <zorder>label_8</zorder>
@@ -1869,7 +2017,7 @@ color: white;</string>
 </string>
      </property>
      <property name="text">
-      <string>TOTAL:</string>
+      <string>SUM</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_23">
@@ -1886,7 +2034,7 @@ color: white;</string>
 </string>
      </property>
      <property name="text">
-      <string>DELETE:</string>
+      <string>TOTAL</string>
      </property>
     </widget>
    </widget>
@@ -2090,7 +2238,7 @@ color: white;</string>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>730</x>
+       <x>740</x>
        <y>370</y>
        <width>211</width>
        <height>20</height>
@@ -2115,10 +2263,10 @@ color: white;</string>
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>10</y>
+       <x>70</x>
+       <y>-20</y>
        <width>1031</width>
-       <height>791</height>
+       <height>831</height>
       </rect>
      </property>
      <property name="text">

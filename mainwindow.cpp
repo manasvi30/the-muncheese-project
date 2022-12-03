@@ -732,14 +732,14 @@ void mainwindow::on_pushButton_ok_clicked()
 
     QString location = ui->lineEdit_street->text();
     QString street = ui->lineEdit_phone->text();
-     if (location =="  " && street =="  " )
+     if (location =="" && street =="" )
      {
-          QMessageBox::warning(this,"locationn","you have not enterd your data");
+          QMessageBox::warning(this,"locationn","<font color=\"black\">you have not enterd your data");
 
      }
      else{
 
-         QMessageBox::information(this,"locationn","location is entered");
+         QMessageBox::information(this,"locationn","<font color=\"black\">location is entered");
           ui->textEdit_1->insertPlainText("your order will be delivered within 30 mins..........");
 
          ui->del->setText(0);
